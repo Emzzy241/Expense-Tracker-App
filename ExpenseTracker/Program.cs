@@ -27,7 +27,6 @@ class Program
         Console.WriteLine("The major goal of our App is cutting down your expenses to the minimum");
 
         Console.WriteLine();
-        Console.WriteLine();
 
         Console.WriteLine("Press ['Y' to continue and 'N' to exit Application]");
 
@@ -37,7 +36,6 @@ class Program
         if (userContinue1 == "Y")
         {
             Console.WriteLine("Tell us about the first expenses");
-            Console.WriteLine();
             Console.WriteLine();
             string expense1 = Console.ReadLine();
             // Console.WriteLine("Press Enter to continue.......");
