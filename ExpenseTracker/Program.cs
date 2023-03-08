@@ -35,7 +35,7 @@ class Program
 
         if (userContinue1 == "Y")
         {
-            Console.WriteLine("Tell us about the first expenses");
+            Console.WriteLine("Tell us about the first expense");
             Console.WriteLine();
             string expense1 = Console.ReadLine();
             // Console.WriteLine("Press Enter to continue.......");
@@ -49,13 +49,13 @@ class Program
             // Adding the first expense to the dictionary
             expenseDictionary.Add(expense1, expense1AmountInt);
 
-            Console.WriteLine("If you would like to input another expense, Enter 'Y' To exit App; Enter 'N', and to see how many Expenses you have now, Enter 'S'");
+            Console.WriteLine("If you would like to input another expense, Enter 'Y'. To exit App Enter 'N'. And to see how many Expenses you have now, Enter 'S'");
 
             string userContinue2 = Console.ReadLine().ToUpper();
 
             if (userContinue2 == "Y")
             {
-                Console.WriteLine("What was your second Expense");
+                Console.WriteLine("What was your second expense?");
                 string expense2 = Console.ReadLine();
                 Console.WriteLine();
                 Console.WriteLine();
@@ -66,12 +66,12 @@ class Program
                 expenseDictionary.Add(expense2, expense2AmountInt);
 
                 // For the 3rd expenses
-                Console.WriteLine("If you would like to input another expense, Enter 'Y' To exit App; Enter 'N', and to see how many Expenses you have now, Enter 'S'");
+                Console.WriteLine("If you would like to input another expense, Enter 'Y'. To exit App Enter 'N'. And to see how many Expenses you have now, Enter 'S'");
 
                 string userContinue3 = Console.ReadLine().ToUpper();
                 if (userContinue3 == "Y")
                 {
-                    Console.WriteLine("What was your third Expense");
+                    Console.WriteLine("What was your third expense?");
                     string expense3 = Console.ReadLine();
                     Console.WriteLine();
                     Console.WriteLine();
@@ -82,12 +82,12 @@ class Program
                     expenseDictionary.Add(expense3, expense3AmountInt);
 
                     // For the 4th expenses
-                    Console.WriteLine("If you would like to input another expense, Enter 'Y' To exit App; Enter 'N', and to see how many Expenses you have now, Enter 'S'");
+                    Console.WriteLine("If you would like to input another expense, Enter 'Y'. To exit App Enter 'N'. And to see how many Expenses you have now, Enter 'S'");
 
                     string userContinue4 = Console.ReadLine().ToUpper();
                     if (userContinue4 == "Y")
                     {
-                        Console.WriteLine("What was your fourth Expense");
+                        Console.WriteLine("What was your fourth expense?");
                         string expense4 = Console.ReadLine();
                         Console.WriteLine();
                         Console.WriteLine();
@@ -98,12 +98,12 @@ class Program
                         expenseDictionary.Add(expense4, expense4AmountInt);
 
                         // For the 5th expenses
-                        Console.WriteLine("If you would like to input another expense, Enter 'Y' To exit App; Enter 'N', and to see how many Expenses you have now, Enter 'S'");
+                        Console.WriteLine("If you would like to input another expense, Enter 'Y'. To exit App Enter 'N'. And to see how many Expenses you have now, Enter 'S'");
 
                         string userContinue5 = Console.ReadLine().ToUpper();
-                        if (userContinue4 == "Y")
+                        if (userContinue5 == "Y")
                         {
-                            Console.WriteLine("What was your fourth Expense");
+                            Console.WriteLine("What was your fifth expense?");
                             string expense5 = Console.ReadLine();
                             Console.WriteLine();
                             Console.WriteLine();
@@ -115,7 +115,7 @@ class Program
 
                             // Displaying to my User all of the Expenses they have
 
-                            Console.WriteLine("Here are all the Expenses you have");
+                            Console.WriteLine("Here are all the expenses you have");
                             Console.WriteLine("On the expenses '" + expense1 + "' You spent: " + expenseDictionary[expense1]);
                             Console.WriteLine("On the expenses '" + expense2 + "' You spent: " + expenseDictionary[expense2]);
                             Console.WriteLine("On the expenses '" + expense3 + "' You spent: " + expenseDictionary[expense3]);
@@ -125,21 +125,21 @@ class Program
 
                         }
 
-                        // else if (userContinue5 == "S")
-                        // {
-                        //     Console.WriteLine("Here are all the Expenses you have");
+                        else if (userContinue5 == "S")
+                        {
+                            Console.WriteLine("Here are all the Expenses you have");
 
-                        //     Console.WriteLine("On the expensess '" + expense2 + "' You spent: " + expenseDictionary[expense2]);
-                        //     Console.WriteLine("On the expensess '" + expense2 + "' You spent: " + expenseDictionary[expense2]);
-                        //     Console.WriteLine("On the expensess'" + expense3 + "' You spent: " + expenseDictionary[expense3]);
-                        //     Console.WriteLine("On the expensess '" + expense4 + "' You spent: " + expenseDictionary[expense4]);
-                        // }
+                            Console.WriteLine("On the expensess '" + expense2 + "' You spent: " + expenseDictionary[expense2]);
+                            Console.WriteLine("On the expensess '" + expense2 + "' You spent: " + expenseDictionary[expense2]);
+                            Console.WriteLine("On the expensess'" + expense3 + "' You spent: " + expenseDictionary[expense3]);
+                            Console.WriteLine("On the expensess '" + expense4 + "' You spent: " + expenseDictionary[expense4]);
+                        }
 
 
-                        // else
-                        // {
-                        //     Console.WriteLine("Goodbye My Dear User");
-                        // }
+                        else
+                        {
+                            Console.WriteLine("Goodbye My Dear User");
+                        }
 
 
                     }
